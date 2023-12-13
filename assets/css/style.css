@@ -361,7 +361,7 @@ h6 {
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
-    display: block;
+    display: flex;
   }
   .navbar ul {
     display: none;
@@ -914,6 +914,8 @@ section {
   cursor: pointer;
   display: inline-block;
   padding: 8px 12px 10px 12px;
+  border: 2px solid;
+  border-color: #cda45e;
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
@@ -934,7 +936,7 @@ section {
 }
 
 .menu .menu-item {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .menu .menu-img {
@@ -952,18 +954,16 @@ section {
   position: relative;
 }
 
-.menu .menu-content::after {
-  content: "......................................................................"
-    "...................................................................."
-    "....................................................................";
+/* .menu .menu-content::after {
+  content: "......................................";
   position: relative;
-  left: 20px;
+  left: 0px;
   right: 0;
   top: -4px;
   z-index: 1;
   color: #bab3a6;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
+} */
 
 .menu .menu-content a {
   padding-right: 10px;
