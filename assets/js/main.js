@@ -191,7 +191,7 @@
   };
 
   document.addEventListener("DOMContentLoaded", function () {
-    fetch("../assets/JSON/menu-data.json")
+    fetch("../../assets/JSON/menu-data.json")
       .then((response) => response.json())
       .then((data) => {
         const menuContainer = document.querySelector(".menu-container");
