@@ -184,8 +184,14 @@
     });
   }
 
+  // Function to handle image loading errors
+  window.handleImageError = function (img) {
+    img.onerror = null; // Prevent infinite loop if "no-image.jpg" is also not found
+    img.src = "./assets/img/menu/no-image.jpg"; // Replace with the path to your "no-image.jpg" file
+  };
+
   document.addEventListener("DOMContentLoaded", function () {
-    fetch("./assets/JSON/menu-data.JSON")
+    fetch("assets/JSON/menu-data.json")
       .then((response) => response.json())
       .then((data) => {
         const menuContainer = document.querySelector(".menu-container");
@@ -198,16 +204,9 @@
             `filter-${item.category}`
           );
 
-          // Function to handle image loading errors
-          function handleImageError(img) {
-            img.onerror = null; // Prevent infinite loop if "no-image.jpg" is also not found
-            img.src = "assets/img/menu/no-image.jpg"; // Replace with the path to your "no-image.jpg" file
-            img.alt = "No Image Available"; // Optional: Set alternative text for accessibility
-          }
-
           menuItem.innerHTML = `
             <a href="${item.image}" target="_blank" data-glightbox="menu" data-title="${item.name}">
-              <img src="${item.image}" class="menu-img" alt="${item.name}" onerror="handleImageError(this)" />
+              <img src="${item.image}" onerror="handleImageError(this)" class="menu-img" alt="${item.name}" />
             </a>
             <div class="menu-content">
               <p>${item.name}</p>
