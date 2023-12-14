@@ -334,7 +334,7 @@
     {
       "category": "salads",
       "name": "Beef Salad",
-      "image": "assets/img/menu/cak.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "grilled sliced beef, lemongrass, mint, cucumber, chilli jam."
     },
     {
@@ -518,13 +518,13 @@
     {
       "category": "beverage",
       "name": "Thai Mojito",
-      "image": "assets/img/menu/thai_mojito.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "A refreshing Thai twist on the classic Mojito."
     },
     {
       "category": "beverage",
       "name": "Lychee and Mint Spritzer",
-      "image": "assets/img/menu/lychee_mint_spritzer.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "A delightful combination of lychee and fresh mint, served over ice."
     },
     {
@@ -536,73 +536,73 @@
     {
       "category": "beverage",
       "name": "Thai Lemon Iced Tea",
-      "image": "assets/img/menu/thai_lemon_iced_tea.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "Iced tea infused with Thai flavors and a hint of lemon."
     },
     {
       "category": "beverage",
       "name": "Thai Milk Green Tea",
-      "image": "assets/img/menu/thai_milk_green_tea.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "Green tea with milk, sweetened and served in the Thai style."
     },
     {
       "category": "beverage",
       "name": "Thai Milk Tea",
-      "image": "assets/img/menu/thai_milk_tea.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "Classic Thai milk tea, a perfect blend of strong tea, condensed milk, and sugar."
     },
     {
       "category": "beverage",
       "name": "Coconut Water",
-      "image": "assets/img/menu/coconut_water.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "Pure and refreshing coconut water served chilled."
     },
     {
       "category": "beverage",
       "name": "Ginger Beer",
-      "image": "assets/img/menu/ginger_beer.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "Spicy and effervescent ginger-flavored beverage."
     },
     {
       "category": "beverage",
       "name": "Lipton Lemon Iced Tea",
-      "image": "assets/img/menu/lipton_lemon_iced_tea.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "Iced tea with a zesty twist of lemon from Lipton."
     },
     {
       "category": "beverage",
       "name": "Lemon Lime Bitters",
-      "image": "assets/img/menu/lemon_lime_bitters.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "A fizzy and bittersweet combination of lemon and lime flavors."
     },
     {
       "category": "beverage",
       "name": "Orange Juice",
-      "image": "assets/img/menu/orange_juice.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "Freshly squeezed orange juice, packed with natural sweetness."
     },
     {
       "category": "beverage",
       "name": "Apple Juice",
-      "image": "assets/img/menu/apple_juice.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "Pure and crisp apple juice, a refreshing choice."
     },
     {
       "category": "beverage",
       "name": "Bottled Water",
-      "image": "assets/img/menu/bottled_water.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "Purified and bottled for a clean and refreshing experience."
     },
     {
       "category": "beverage",
       "name": "1.25L Soft Drink Bottle",
-      "image": "assets/img/menu/soft_drink_bottle.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "A larger size of your favorite soft drink, perfect for sharing."
     },
     {
       "category": "beverage",
       "name": "Soft Drink Cans (Coke / Coke Zero / Lemonade / Solo)",
-      "image": "assets/img/menu/soft_drink_cans.jpg",
+      "image": "assets/img/menu/cake.jpg",
       "descriptions": "Convenient and fizzy soft drinks in a can."
     }
   ]
