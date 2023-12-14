@@ -185,7 +185,7 @@
   }
 
   // Function to handle image loading errors
-  function handleImageError(img) {
+  window.handleImageError(img) {
     // img.onerror = null; // Prevent infinite loop if "no-image.jpg" is also not found
     img.src = "./assets/img/menu/no-image.jpg"; // Replace with the path to your "no-image.jpg" file
   };
