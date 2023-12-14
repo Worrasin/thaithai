@@ -1030,6 +1030,18 @@ section {
   font-size: 14px;
   color: #bab3a6;
 }
+
+.contact .info a {
+  padding: 0 0 0 10px;
+  font-size: 18px;
+  color: #bab3a6;
+}
+
+.contact .info a:hover {
+  border-bottom: 2px dashed #cda45e;
+  color: #cda45e;
+}
+
 .contact .info .follow p {
   padding: 20 20px;
   font-size: 20px;
