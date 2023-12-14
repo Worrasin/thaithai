@@ -185,10 +185,10 @@
   }
 
   // Function to handle image loading errors
- function handleImageError(img) {
-  img.onerror = null; // Prevent infinite loop if "no-image.jpg" is also not found
-  img.src = "./assets/img/menu/no-image.jpg"; // Replace with the path to your "no-image.jpg" file
-}
+  window.handleImageError = function (img) {
+    img.onerror = null; // Prevent infinite loop if "no-image.jpg" is also not found
+    img.src = "./assets/img/menu/no-image.jpg"; // Replace with the path to your "no-image.jpg" file
+  };
 
   document.addEventListener("DOMContentLoaded", function () {
     fetch("assets/JSON/menu-data.json")
