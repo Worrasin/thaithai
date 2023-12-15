@@ -206,7 +206,7 @@
 
           menuItem.innerHTML = `
             <a href="${item.image}" target="_blank" data-glightbox="menu" data-title="${item.name}">
-              <img src="${item.image}" class="menu-img" alt="${item.name}" />
+              <img src="${item.image}" onerror="handleImageError(this)" class="menu-img" alt="${item.name}" />
             </a>
             <div class="menu-content">
               <p>${item.name}</p>
