@@ -185,7 +185,7 @@
   }
 
   // Function to handle image loading errors
-  window.handleImageError(img) {
+ function handleImageError() {
     img.onerror = null; // Prevent infinite loop if "no-image.jpg" is also not found
     img.src = "./assets/img/menu/no-image.jpg"; // Replace with the path to your "no-image.jpg" file
   };
@@ -206,7 +206,7 @@
 
           menuItem.innerHTML = `
             <a href="${item.image}" target="_blank" data-glightbox="menu" data-title="${item.name}">
-              <img src="${item.image}" onerror="handleImageError(this)" class="menu-img" alt="${item.name}" />
+              <img src="${item.image}" onerror="handleImageError()" class="menu-img" alt="${item.name}" />
             </a>
             <div class="menu-content">
               <p>${item.name}</p>
