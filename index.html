@@ -38,8 +38,10 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-  
-    
+
+    <!-- restaurant award -->
+    <link href="https://awards.infcdn.net/r_gold.css" rel="stylesheet" />
+
     <!-- =======================================================
   * Template Name: Restaurantly - v3.1.0
   * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
@@ -92,7 +94,10 @@
         <div class="row">
           <div class="col-lg-8">
             <h1>Welcome to <span>Thai Thai Restaurant</span></h1>
-            <h2>Best authentic Thai food in Darwin operating for more than 15 years!</h2>
+            <h2>
+              Best authentic Thai food in Darwin operating for more than 15
+              years!
+            </h2>
 
             <div class="btns">
               <a href="#menu" class="btn-menu animated fadeInUp scrollto"
@@ -121,14 +126,27 @@
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
               <h3>About Us</h3>
-              <p class="fst-italic">1st Description</p>
+              <p class="fst-italic">
+                Welcome to Thai Thai Restaurant, a culinary haven where the rich
+                and vibrant flavors of Thailand come to life.In here, we invite
+                you on a gastronomic journey that showcases the authenticity and
+                diversity of Thai cuisine. Immerse yourself in the aromatic
+                blend of spices and herbs as our expert chefs, operating for
+                more than 15 years, skillfully craft each dish to tantalize your
+                taste buds. Variety range of our service can be available for
+                you as below.
+              </p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Dine-In & Take Away</li>
-                <li><i class="bi bi-check-circle"></i> Catering</li>
+                <li><i class="bi bi-check-circle"></i> BYO Dine-In</li>
+                <li><i class="bi bi-check-circle"></i> Take Away</li>
                 <li><i class="bi bi-check-circle"></i> Delivery</li>
-                <li><i class="bi bi-check-circle"></i> Function</li>
+                <li><i class="bi bi-check-circle"></i> Catering</li>
               </ul>
-              <p>2nd Description</p>
+              <p class="fst-italic">
+                Join us now, where every meal is a celebration of Thailand's
+                culinary heritage, and let the captivating tastes transport you
+                to the heart of Southeast Asia.
+              </p>
             </div>
           </div>
         </div>
@@ -149,8 +167,32 @@
                 <span>01</span>
                 <h4>Restaurant Award</h4>
                 <p>
-                  We're proud recipients of Menulog and Restaurant Guru awards, a testament to our commitment to exceptional dining experiences.
+                  We're proud recipients of Menulog and Restaurant Guru awards,
+                  a testament to our commitment to exceptional dining
+                  experiences.
                 </p>
+
+                <div
+                  id="r-gold"
+                  onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.r-gold_r-link').href);return 0;}"
+                >
+                  <div class="r-gold__inner">
+                    <a
+                      href="https://restaurantguru.com/Thai-Thai-Eaton-Northern-Territory"
+                      class="r-gold_r-link"
+                      target="_blank"
+                      >Thai Thai</a
+                    >
+                    <div class="r-gold_center">Best restaurant</div>
+                    <a
+                      href="https://restaurantguru.com"
+                      class="r-gold__link"
+                      target="_blank"
+                      >Restaurant Guru</a
+                    >
+                    <div class="r-gold_year">2023</div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -188,8 +230,9 @@
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Menu</h2>
-            <p>Check Our Tasty Menu <h6>(Please click to see the menu list)</h6></p>
-            
+            <!-- prettier-ignore -->
+            <p>Check Our Tasty Menu </p>
+            <h6>(Please click to see the menu list)</h6>
           </div>
 
           <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -210,20 +253,15 @@
                 <li data-filter=".filter-beverage">Beverages</li>
               </ul>
             </div>
-
-            <div>
-              <p>Choice of meat : Vegie / Chicken / Beef / Pork / BBQ Pork / Duck / Seafood *</p>
-              <p>* Contain imported seafood</p>
-            </div>
-            
           </div>
 
           <div
             class="row menu-container"
             data-aos="fade-up"
             data-aos-delay="200"
-          >
-          </div>
+          ></div>
+          <div class="menu-description"></div>
+          <div class="menu-order"></div>
         </div>
       </section>
       <!-- ======= Gallery Section ======= -->
@@ -388,7 +426,7 @@
         </div>
 
         <div class="container" data-aos="fade-up">
-          <div class="row mt-5 ">
+          <div class="row mt-5">
             <!-- First Column -->
             <div class="col-lg-6">
               <div class="info">
@@ -397,71 +435,81 @@
                   <h4>Location:</h4>
                   <p>1/266 Trower Rd, Casuarina NT 0810</p>
                 </div>
-        
+
                 <div class="open-hours">
                   <i class="bi bi-clock"></i>
                   <h4>Open Hours:</h4>
                   <p>
-                    Monday        : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
-                    <br>
-                    Tuesday       : Closed
-                    <br>
+                    Monday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
+                    <br />
+                    Tuesday : Closed
+                    <br />
                     Wednesday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
-                    <br>
-                    Thursday        : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
-                    <br>
-                    Friday          : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
-                    <br>
-                    Saturday        : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
-                    <br>   
-                    Sunday          : 5:00 PM - 9:00 PM
-                    <br>
+                    <br />
+                    Thursday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
+                    <br />
+                    Friday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
+                    <br />
+                    Saturday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
+                    <br />
+                    Sunday : 5:00 PM - 9:00 PM
+                    <br />
                   </p>
                 </div>
               </div>
             </div>
-        
+
             <!-- Second Column -->
             <div class="col-lg-6">
               <div class="info">
                 <div class="email">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <a href="mailto:ThaiThaiNT@hotmail.com" target="_blank">ThaiThaiNT@hotmail.com</a>
+                  <a href="mailto:ThaiThaiNT@hotmail.com" target="_blank"
+                    >ThaiThaiNT@hotmail.com</a
+                  >
                 </div>
-        
+
                 <div class="phone">
                   <i class="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <a href="tel:+6189279263" target="_blank">+61 8927 9623</a><span><a href="tel:+6189454388">, +61 8945 4388</a></span>
+                  <a href="tel:+6189279263" target="_blank">+61 8927 9623</a
+                  ><span><a href="tel:+6189454388">, +61 8945 4388</a></span>
                 </div>
               </div>
             </div>
 
-             <!-- Third Column -->
-             <div class="col-lg-12">
+            <!-- Third Column -->
+            <div class="col-lg-12">
               <div class="info">
-                <div class="follow ">
-                  <i class="bi bi-facebook"></i> <!-- Facebook Icon -->
-                  <p>Please follow us on the Facebook page for interesting news and updates.</p>
-                 
+                <div class="follow">
+                  <i class="bi bi-facebook"></i>
+                  <!-- Facebook Icon -->
+                  <p>
+                    Please follow us on the Facebook page for interesting news
+                    and updates.
+                  </p>
                 </div>
-                 
               </div>
-              <div class="d-flex"><a href="https://www.facebook.com/ThaiThaiDarwin/" class="FBlink " target="_blank">Follow us</a>
-                <!-- Add more content if needed --></div>
+              <div class="d-flex">
+                <a
+                  href="https://www.facebook.com/ThaiThaiDarwin/"
+                  class="FBlink"
+                  target="_blank"
+                  >Follow us</a
+                >
+                <!-- Add more content if needed -->
+              </div>
             </div>
-
           </div>
         </div>
-        
       </section>
       <!-- End Contact Section -->
     </main>
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    
+    <footer>
       <div class="container">
         <div class="copyright">
           &copy; Copyright <strong><span>Thai Thai Restaurant</span></strong
@@ -472,7 +520,11 @@
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a><span> and <a href="https://www.facebook.com/tao.tang.96/" target="_blank">Worrasin D.</span></p>
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a
+          ><span> and </span
+          ><a href="https://www.facebook.com/tao.tang.96/" target="_blank"
+            >Worrasin D.
+          </a>
         </div>
       </div>
     </footer>
