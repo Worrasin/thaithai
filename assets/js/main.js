@@ -1,339 +1,551 @@
-/**
- * Template Name: Restaurantly - v3.1.0
- * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
-(function () {
-  "use strict";
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim();
-    if (all) {
-      return [...document.querySelectorAll(el)];
-    } else {
-      return document.querySelector(el);
-    }
-  };
+    <title>Thai Thai Restaurant Darwin-NT</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all);
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach((e) => e.addEventListener(type, listener));
-      } else {
-        selectEl.addEventListener(type, listener);
-      }
-    }
-  };
+    <!-- Favicons -->
+    <link href="assets/img/logo.jpg" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  /**
-   * Easy on scroll event listener
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener("scroll", listener);
-  };
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select("#navbar .scrollto", true);
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200;
-    navbarlinks.forEach((navbarlink) => {
-      if (!navbarlink.hash) return;
-      let section = select(navbarlink.hash);
-      if (!section) return;
-      if (
-        position >= section.offsetTop &&
-        position <= section.offsetTop + section.offsetHeight
-      ) {
-        navbarlink.classList.add("active");
-      } else {
-        navbarlink.classList.remove("active");
-      }
-    });
-  };
-  window.addEventListener("load", navbarlinksActive);
-  onscroll(document, navbarlinksActive);
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select("#header");
-    let offset = header.offsetHeight;
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-    let elementPos = select(el).offsetTop;
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: "smooth",
-    });
-  };
+    <!-- restaurant award -->
+    <link href="https://awards.infcdn.net/r_gold.css" rel="stylesheet" />
 
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
-  let selectHeader = select("#header");
-  let selectTopbar = select("#topbar");
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add("header-scrolled");
-        if (selectTopbar) {
-          selectTopbar.classList.add("topbar-scrolled");
-        }
-      } else {
-        selectHeader.classList.remove("header-scrolled");
-        if (selectTopbar) {
-          selectTopbar.classList.remove("topbar-scrolled");
-        }
-      }
-    };
-    window.addEventListener("load", headerScrolled);
-    onscroll(document, headerScrolled);
-  }
+    <!-- =======================================================
+  * Template Name: Restaurantly - v3.1.0
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
 
-  /**
-   * Back to top button
-   */
-  let backtotop = select(".back-to-top");
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add("active");
-      } else {
-        backtotop.classList.remove("active");
-      }
-    };
-    window.addEventListener("load", toggleBacktotop);
-    onscroll(document, toggleBacktotop);
-  }
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-cente">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-lg-between"
+      >
+        <h1 class="logo me-auto me-lg-0">
+          <a href="index.html">Thai Thai</a>
+        </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-  /**
-   * Mobile nav toggle
-   */
-  on("click", ".mobile-nav-toggle", function (e) {
-    select("#navbar").classList.toggle("navbar-mobile");
-    this.classList.toggle("bi-list");
-    this.classList.toggle("bi-x");
-  });
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#why-us">Why Us</a></li>
+            <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+            <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+        <a
+          href="https://www.menulog.com.au/restaurants-thai-thai-restaurant-casuarina"
+          target="_blank"
+          class="book-a-table-btn scrollto d-md-flex"
+          >Order now</a
+        >
+      </div>
+    </header>
+    <!-- End Header -->
 
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on(
-    "click",
-    ".navbar .dropdown > a",
-    function (e) {
-      if (select("#navbar").classList.contains("navbar-mobile")) {
-        e.preventDefault();
-        this.nextElementSibling.classList.toggle("dropdown-active");
-      }
-    },
-    true
-  );
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div
+        class="container position-relative text-center text-lg-start"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <div class="row">
+          <div class="col-lg-8">
+            <h1>Welcome to <span>Thai Thai Restaurant</span></h1>
+            <h2>
+              Best authentic Thai food in Darwin operating for more than 15
+              years!
+            </h2>
 
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on(
-    "click",
-    ".scrollto",
-    function (e) {
-      if (select(this.hash)) {
-        e.preventDefault();
-
-        let navbar = select("#navbar");
-        if (navbar.classList.contains("navbar-mobile")) {
-          navbar.classList.remove("navbar-mobile");
-          let navbarToggle = select(".mobile-nav-toggle");
-          navbarToggle.classList.toggle("bi-list");
-          navbarToggle.classList.toggle("bi-x");
-        }
-        scrollto(this.hash);
-      }
-    },
-    true
-  );
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener("load", () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash);
-      }
-    }
-  });
-
-  /**
-   * Preloader
-   */
-  let preloader = select("#preloader");
-  if (preloader) {
-    window.addEventListener("load", () => {
-      preloader.remove();
-    });
-  }
-
-  // Function to handle image loading errors
- function handleImageError() {
-    img.onerror = null; // Prevent infinite loop if "no-image.jpg" is also not found
-    img.src = "./assets/img/menu/no-image.jpg"; // Replace with the path to your "no-image.jpg" file
-  };
-
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("./assets/JSON/menu-data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const menuContainer = document.querySelector(".menu-container");
-
-        data.items.forEach((item) => {
-          const menuItem = document.createElement("div");
-          menuItem.classList.add(
-            "col-lg-6",
-            "menu-item",
-            `filter-${item.category}`
-          );
-
-          menuItem.innerHTML = `
-            <a href="${item.image}" target="_blank" data-glightbox="menu" data-title="${item.name}">
-              <img src="${item.image}" onerror="handleImageError()" class="menu-img" alt="${item.name}" />
-            </a>
-            <div class="menu-content">
-              <p>${item.name}</p>
+            <div class="btns">
+              <a href="#menu" class="btn-menu animated fadeInUp scrollto"
+                >Our Menu</a
+              >
             </div>
-            <div class="menu-descriptions">${item.descriptions}</div>
-          `;
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
 
-          menuContainer.appendChild(menuItem);
-        });
-      })
-      .catch((error) => console.error("Error loading menu data:", error));
-  });
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div
+              class="col-lg-6 order-1 order-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="about-img">
+                <img src="assets/img/about.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+              <h3>About Us</h3>
+              <p class="fst-italic">
+                Welcome to Thai Thai Restaurant, a culinary haven where the rich
+                and vibrant flavors of Thailand come to life.In here, we invite
+                you on a gastronomic journey that showcases the authenticity and
+                diversity of Thai cuisine. Immerse yourself in the aromatic
+                blend of spices and herbs as our expert chefs, operating for
+                more than 15 years, skillfully craft each dish to tantalize your
+                taste buds. Variety range of our service can be available for
+                you as below.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> BYO Dine-In</li>
+                <li><i class="bi bi-check-circle"></i> Take Away</li>
+                <li><i class="bi bi-check-circle"></i> Delivery</li>
+                <li><i class="bi bi-check-circle"></i> Catering</li>
+              </ul>
+              <p class="fst-italic">
+                Join us now, where every meal is a celebration of Thailand's
+                culinary heritage, and let the captivating tastes transport you
+                to the heart of Southeast Asia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
 
-  /**
-   * Menu isotope and filter
-   */
-  window.addEventListener("load", () => {
-    let menuContainer = select(".menu-container");
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Why Us</h2>
+            <p>Why Choose Our Restaurant</p>
+          </div>
 
-    if (menuContainer) {
-      let menuIsotope = new Isotope(menuContainer, {
-        itemSelector: ".menu-item",
-        layoutMode: "fitRows",
-      });
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>01</span>
+                <h4>Restaurant Award</h4>
+                <p>
+                  We're proud recipients of Menulog and Restaurant Guru awards,
+                  a testament to our commitment to exceptional dining
+                  experiences.
+                </p>
 
-      let menuFilters = select("#menu-flters li", true);
+                <div
+                  id="r-gold"
+                  onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.r-gold_r-link').href);return 0;}"
+                >
+                  <div class="r-gold__inner">
+                    <a
+                      href="https://restaurantguru.com/Thai-Thai-Eaton-Northern-Territory"
+                      class="r-gold_r-link"
+                      target="_blank"
+                      >Thai Thai</a
+                    >
+                    <div class="r-gold_center">Best restaurant</div>
+                    <a
+                      href="https://restaurantguru.com"
+                      class="r-gold__link"
+                      target="_blank"
+                      >Restaurant Guru</a
+                    >
+                    <div class="r-gold_year">2023</div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      // Set a default filter on page load (e.g., "starter")
-      let defaultFilter = ".starters"; // Replace with the appropriate class for the "starter" filter
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <span>02</span>
+                <h4>Free Delivery</h4>
+                <p>
+                  Every order more than $50 will get free delivery. On top of
+                  that, free prawn cracker and carbonated drink when the order
+                  is more than $60
+                </p>
+              </div>
+            </div>
 
-      // Apply the default filter to the Isotope arrangement
-      menuIsotope.arrange({
-        filter: defaultFilter,
-      });
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                <span>03</span>
+                <h4>Special Menu</h4>
+                <p>
+                  We can do special Thai menu which not in the menu list depends
+                  on customer.
+                </p>
+                <hr />
+                <p>* Please request 1 day prior to the actual date</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Why Us Section -->
 
-      // Add initial "filter-active" class to the default filter
-      menuFilters.forEach(function (el) {
-        if (el.getAttribute("data-filter") === defaultFilter) {
-          el.classList.add("filter-active");
-        }
-      });
+      <!-- ======= Menu Section ======= -->
+      <section id="menu" class="menu section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Menu</h2>
+            <!-- prettier-ignore -->
+            <p>Check Our Tasty Menu </p>
+            <h6>(Please click to see the menu list)</h6>
+          </div>
 
-      on(
-        "click",
-        "#menu-flters li",
-        function (e) {
-          e.preventDefault();
-          menuFilters.forEach(function (el) {
-            el.classList.remove("filter-active");
-          });
-          this.classList.add("filter-active");
-          menuIsotope.arrange({
-            filter: this.getAttribute("data-filter"),
-          });
-          menuIsotope.on("arrangeComplete", function () {
-            AOS.refresh();
-          });
-        },
-        true
-      );
-    }
-  });
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="menu-flters">
+                <!-- <li data-filter="*" class="filter-active">All</li> -->
+                <li data-filter=".filter-starters">Starters</li>
+                <li data-filter=".filter-soups">Soups</li>
+                <li data-filter=".filter-noodles">Noodles</li>
+                <li data-filter=".filter-curries">Curries</li>
+                <li data-filter=".filter-woks">From the Wok</li>
+                <li data-filter=".filter-belly">Crispy Pork Belly</li>
+                <li data-filter=".filter-SFN">Stir Fried Noodles</li>
+                <li data-filter=".filter-salads">Salads</li>
+                <li data-filter=".filter-specialty">Specialty</li>
+                <li data-filter=".filter-rice">Rice</li>
+                <li data-filter=".filter-dessert">Desserts</li>
+                <li data-filter=".filter-beverage">Beverages</li>
+              </ul>
+            </div>
+          </div>
 
-  /**
-   * Events slider
-   */
-  new Swiper(".events-slider", {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-  });
+          <div
+            class="row menu-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          ></div>
+          <div class="menu-description"></div>
+          <div class="menu-order"></div>
+        </div>
+      </section>
+      <!-- ======= Gallery Section ======= -->
+      <section id="gallery" class="gallery">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Gallery</h2>
+            <p>Some photos from Our Restaurant</p>
+          </div>
+        </div>
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper(".testimonials-slider", {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: "auto",
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-0">
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-1.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-1.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
 
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
-  });
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-2.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-2.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
 
-  /**
-   * Initiate gallery lightbox
-   */
-  const galleryLightbox = GLightbox({
-    selector: ".gallery-lightbox",
-  });
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-3.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-3.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
 
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener("load", () => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false,
-    });
-  });
-})();
-// script.js
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-4.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-4.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-5.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-5.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-6.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-6.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-7.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-7.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <a
+                  href="assets/img/gallery/gallery-8.jpg"
+                  class="gallery-lightbox"
+                  data-gall="gallery-item"
+                >
+                  <img
+                    src="assets/img/gallery/gallery-8.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Gallery Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>Contact Us</p>
+          </div>
+        </div>
+
+        <div data-aos="fade-up">
+          <iframe
+            style="border: 0; width: 100%; height: 350px"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.1283430776193!2d130.88103857429874!3d-12.374334248084685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cc09498af8ae7c9%3A0x3f5ce8b001910f2d!2sThai%20Thai!5e0!3m2!1sen!2sau!4v1702108382032!5m2!1sen!2sau"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+          <div class="row mt-5">
+            <!-- First Column -->
+            <div class="col-lg-6">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>1/266 Trower Rd, Casuarina NT 0810</p>
+                </div>
+
+                <div class="open-hours">
+                  <i class="bi bi-clock"></i>
+                  <h4>Open Hours:</h4>
+                  <p>
+                    Monday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
+                    <br />
+                    Tuesday : Closed
+                    <br />
+                    Wednesday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
+                    <br />
+                    Thursday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
+                    <br />
+                    Friday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
+                    <br />
+                    Saturday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
+                    <br />
+                    Sunday : 5:00 PM - 9:00 PM
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-lg-6">
+              <div class="info">
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <a href="mailto:ThaiThaiNT@hotmail.com" target="_blank"
+                    >ThaiThaiNT@hotmail.com</a
+                  >
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <a href="tel:+6189279263" target="_blank">+61 8927 9623</a
+                  ><span><a href="tel:+6189454388">, +61 8945 4388</a></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Column -->
+            <div class="col-lg-12">
+              <div class="info">
+                <div class="follow">
+                  <i class="bi bi-facebook"></i>
+                  <!-- Facebook Icon -->
+                  <p>
+                    Please follow us on the Facebook page for interesting news
+                    and updates.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <a
+                  href="https://www.facebook.com/ThaiThaiDarwin/"
+                  class="FBlink"
+                  target="_blank"
+                  >Follow us</a
+                >
+                <!-- Add more content if needed -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Thai Thai Restaurant</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a
+          ><span> and </span
+          ><a href="https://www.facebook.com/tao.tang.96/" target="_blank"
+            >Worrasin D.
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
