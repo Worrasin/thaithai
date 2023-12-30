@@ -33,7 +33,7 @@
     {
       "category": "starters",
       "name": "Garlic Chicken Wings (4pcs)",
-      "image": "assets/img/menu/starter/.jpg",
+      "image": "assets/img/menu/starter/garlic-wing.jpg",
       "descriptions": "fried chicken wings coated in a garlic sauce."
     },
     {
@@ -63,7 +63,7 @@
     {
       "category": "starters",
       "name": "Prawn Sarong * (4pcs)",
-      "image": "assets/img/menu/starter/.jpg",
+      "image": "assets/img/menu/starter/sarong.jpg",
       "descriptions": "prawns wrapped in crispy egg noodles with sauce."
     },
     {
@@ -105,12 +105,6 @@
       "descriptions": "coconut milk-based broth, noodles, seafood, chicken, and tofu."
     },
     {
-      "category": "SFN",
-      "name": "Laad Na",
-      "image": "assets/img/menu/noodle/laad-na.jpg",
-      "descriptions": "flat noodles topped with a thick gravy sauce."
-    },
-    {
       "category": "noodles",
       "name": "Beef Noodle Soup",
       "image": "assets/img/menu/cake.jpg",
@@ -125,7 +119,7 @@
     {
       "category": "noodles",
       "name": "Tom Yum Noodle (Soup/Dry)",
-      "image": "assets/img/menu/noodle/.jpg",
+      "image": "assets/img/menu/noodle/ty-noodle.jpg",
       "descriptions": "minced pork, bean sprout, peanuts, spicy soup"
     },
 
@@ -149,14 +143,20 @@
     },
     {
       "category": "noodles",
+      "name": "Laad Na (flat noodle / crispy egg noodle)",
+      "image": "assets/img/menu/noodle/laad-na.jpg",
+      "descriptions": "selected noodles topped with a thick gravy sauce."
+    },
+    {
+      "category": "noodles",
       "name": "Khao Soi",
-      "image": "assets/img/menu/noodle/.jpg",
+      "image": "assets/img/menu/noodle/khao-soi.jpg",
       "descriptions": "egg noodles, chicken drumstick in another region coconut curry."
     },
     {
       "category": "noodles",
       "name": "Guay Jup",
-      "image": "assets/img/menu/noodle/.jpg",
+      "image": "assets/img/menu/noodle/guay-jup.jpg",
       "descriptions": "flat rice noodle soup with pork belly, boiled egg in a five spice broth."
     },
     {
@@ -212,7 +212,7 @@
     {
       "category": "woks",
       "name": "Ginger stir fry",
-      "image": "assets/img/menu/wok/.jpg",
+      "image": "assets/img/menu/wok/ginger.jpg",
       "descriptions": "ginger, mushroom, baby corn, onion."
     },
     {
@@ -236,7 +236,7 @@
     {
       "category": "woks",
       "name": "Jungle stir fry",
-      "image": "assets/img/menu/wok/.jpg",
+      "image": "assets/img/menu/wok/jungle.jpg",
       "descriptions": "fry red curry paste, young peppercorns, green beans, coconut milk."
     },
     {
@@ -261,7 +261,7 @@
     {
       "category": "belly",
       "name": "Krapao (basil) Crispy pork belly",
-      "image": "assets/img/menu/belly/.jpg",
+      "image": "assets/img/menu/belly/basil-belly.jpg",
       "descriptions": "wok-tossed crispy pork, green beans, bamboo, holy basil, chilli and garlic."
     },
     {
@@ -306,12 +306,6 @@
       "name": "Drunk Noodles (Pad Kee Mow)",
       "image": "assets/img/menu/sfn/drunk.jpg",
       "descriptions": "flat rice noodle, garlic, chilli and basil."
-    },
-    {
-      "category": "SFN",
-      "name": "Crispy Egg Noodles",
-      "image": "assets/img/menu/sfn/.jpg",
-      "descriptions": "crispy egg noodle topped with a thick gravy sauce."
     },
     {
       "category": "SFN",
@@ -408,7 +402,7 @@
     {
       "category": "specialty",
       "name": "Paloh Pork Belly",
-      "image": "assets/img/menu/specialty/.jpg",
+      "image": "assets/img/menu/specialty/paloh.jpg",
       "descriptions": "braised pork belly in a five spice broth, with boiled egg and pickled cabbage."
     },
     {
@@ -471,11 +465,17 @@
       "image": "assets/img/menu/specialty/sai-krog.jpg",
       "descriptions": "Thai style sausage consists of pork pickle"
     },
+    {
+      "category": "specialty",
+      "name": "Sai Ouir",
+      "image": "assets/img/menu/specialty/sai-ouir.jpg",
+      "descriptions": "Laotian style sausage with a hint of spiciness"
+    },
 
     {
       "category": "rice",
       "name": "Steamed Jasmine Rice",
-      "image": "assets/img/menu/rice/.jpg",
+      "image": "assets/img/menu/rice/steamed-rice.jpg",
       "descriptions": "Thai jasmine rice with a perfectly cooked."
     },
     {
@@ -493,7 +493,7 @@
     {
       "category": "rice",
       "name": "Sticky Rice (recomended with any BBQ grilled dish)",
-      "image": "assets/img/menu/rice/.jpg",
+      "image": "assets/img/menu/rice/sticky-rice.jpg",
       "descriptions": "Popular rice in the eastern of Thailand"
     },
     {
@@ -525,92 +525,44 @@
     {
       "category": "beverage",
       "name": "Thai Mojito",
-      "image": "assets/img/menu/beverage/.jpg",
+      "image": "assets/img/menu/beverage/mojito.jpg",
       "descriptions": "A refreshing Thai twist on the classic Mojito."
     },
     {
       "category": "beverage",
       "name": "Lychee and Mint Spritzer",
-      "image": "assets/img/menu/beverage/.jpg",
+      "image": "assets/img/menu/beverage/lychee-mint.jpg",
       "descriptions": "A delightful combination of lychee and fresh mint, served over ice."
     },
     {
       "category": "beverage",
       "name": "Thai Iced Coffee",
-      "image": "assets/img/menu/beverage/.jpg",
+      "image": "assets/img/menu/beverage/coffee.jpg",
       "descriptions": "Chilled coffee with a Thai flair, sweetened and served over ice."
     },
     {
       "category": "beverage",
       "name": "Thai Lemon Iced Tea",
-      "image": "assets/img/menu/beverage/.jpg",
+      "image": "assets/img/menu/beverage/lemon-tea.jpg",
       "descriptions": "Iced tea infused with Thai flavors and a hint of lemon."
     },
     {
       "category": "beverage",
       "name": "Thai Milk Green Tea",
-      "image": "assets/img/menu/beverage/.jpg",
+      "image": "assets/img/menu/beverage/green-tea.jpg",
       "descriptions": "Green tea with milk, sweetened and served in the Thai style."
     },
     {
       "category": "beverage",
       "name": "Thai Milk Tea",
-      "image": "assets/img/menu/beverage/.jpg",
+      "image": "assets/img/menu/beverage/milk-tea.jpg",
       "descriptions": "Classic Thai milk tea, a perfect blend of strong tea, condensed milk, and sugar."
     },
     {
       "category": "beverage",
-      "name": "Coconut Water",
-      "image": "assets/img/menu/beverage/.jpg",
-      "descriptions": "Pure and refreshing coconut water served chilled."
-    },
-    {
-      "category": "beverage",
-      "name": "Ginger Beer",
-      "image": "assets/img/menu/beverage/.jpg",
-      "descriptions": "Spicy and effervescent ginger-flavored beverage."
-    },
-    {
-      "category": "beverage",
-      "name": "Lipton Lemon Iced Tea",
-      "image": "assets/img/menu/beverage/.jpg",
-      "descriptions": "Iced tea with a zesty twist of lemon from Lipton."
-    },
-    {
-      "category": "beverage",
-      "name": "Lemon Lime Bitters",
-      "image": "assets/img/menu/beverage/.jpg",
-      "descriptions": "A fizzy and bittersweet combination of lemon and lime flavors."
-    },
-    {
-      "category": "beverage",
-      "name": "Orange Juice",
-      "image": "assets/img/menu/beverage/.jpg",
-      "descriptions": "Freshly squeezed orange juice, packed with natural sweetness."
-    },
-    {
-      "category": "beverage",
-      "name": "Apple Juice",
-      "image": "assets/img/menu/beverage/.jpg",
-      "descriptions": "Pure and crisp apple juice, a refreshing choice."
-    },
-    {
-      "category": "beverage",
-      "name": "Bottled Water",
-      "image": "assets/img/menu/beverage/.jpg",
-      "descriptions": "Purified and bottled for a clean and refreshing experience."
-    },
-    {
-      "category": "beverage",
-      "name": "1.25L Soft Drink Bottle",
-      "image": "assets/img/menu/beverage/.jpg",
-      "descriptions": "A larger size of your favorite soft drink, perfect for sharing."
-    },
-    {
-      "category": "beverage",
-      "name": "Soft Drink Cans (Coke / Coke Zero / Lemonade / Solo)",
-      "image": "assets/img/menu/beverage/.jpg",
-      "descriptions": "Convenient and fizzy soft drinks in a can."
+      "name": "Pink milk (Nom-yen)",
+      "image": "assets/img/menu/beverage/pink-milk.jpg",
+      "descriptions": "Sweet sala-flavor syrup and milk"
     }
   ]
 }
