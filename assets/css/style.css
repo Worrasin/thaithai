@@ -904,6 +904,12 @@ section {
   align-items: center;
 }
 
+.award img {
+  margin: 5px auto;
+  display: flex;
+  width: 60%;
+}
+
 @media (max-width: 991px) {
   #r-gold {
     margin: 10px auto;
