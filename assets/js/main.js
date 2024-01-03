@@ -191,7 +191,7 @@
   };
 
   document.addEventListener("DOMContentLoaded", function () {
-    fetch("./assets/JSON/menu-data.json")
+    fetch("../assets/JSON/menu-data.json")
       .then((response) => response.json())
       .then((data) => {
         const menuContainer = document.querySelector(".menu-container");
@@ -206,7 +206,7 @@
 
           menuItem.innerHTML = `
             <a href="${item.image}" target="_blank" data-glightbox="menu" data-title="${item.name}">
-              <img src="${item.image}" onerror="handleImageError(this)" class="menu-img" alt="${item.name}" />
+              <img src="${item.image}" onerror="handleImageError(this)" class="menu-img" alt="${item.name}" loading="lazy" />
             </a>
             <div class="menu-content">
               <p>${item.name}</p>
@@ -357,3 +357,16 @@
   });
 })();
 // script.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  var myCarousel = document.getElementById("carouselExampleCaptions");
+  var carousel = new bootstrap.Carousel(myCarousel);
+
+  myCarousel.addEventListener("swipe.bs.carousel", function (event) {
+    if (event.direction === "right") {
+      carousel.next();
+    } else if (event.direction === "left") {
+      carousel.prev();
+    }
+  });
+});
