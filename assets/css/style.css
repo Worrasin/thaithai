@@ -1023,6 +1023,69 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Special
+--------------------------------------------------------------*/
+
+.carousel-inner {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.carousel-item {
+  text-align: center;
+}
+.carousel-item {
+  padding-bottom: 100px;
+}
+.carousel-item img {
+  max-height: 80vw;
+  max-width: 80vh;
+  margin: auto;
+}
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  bottom: 80px;
+  /* bottom: 100; */
+  text-align: center;
+  text-align: center;
+  margin: -50px auto;
+  width: 50vw;
+}
+.carousel-caption span {
+  position: relative;
+  display: block;
+  color: #d3af71;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 20px;
+  background-color: #000000;
+  background-color: #333; /* Set background color */
+  box-shadow: 0 0 10px 2px #d3af71; /* Apply glowing effect */
+}
+@media (max-width: 860px) {
+  .carousel-item {
+    padding-bottom: 150px;
+  }
+}
+@media (max-width: 370px) {
+  .carousel-item {
+    padding-bottom: 200px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+
+.gallery {
+  background-color: #1a1814;
+}
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
