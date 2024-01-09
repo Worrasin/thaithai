@@ -15,7 +15,7 @@
     {
       "category": "starters",
       "name": "Money Bags (4pcs)",
-      "image": "assets/img/menu/starter/.jpg",
+      "image": "assets/img/menu/starter/mb.jpg",
       "descriptions": "minced pork, coconut, peas and coconut wrapped in a golden bag."
     },
     {
@@ -27,7 +27,7 @@
     {
       "category": "starters",
       "name": "Spicy Chicken Wings (4pcs)",
-      "image": "assets/img/menu/starter/.jpg",
+      "image": "assets/img/menu/starter/spicy.jpg",
       "descriptions": "fried chicken wings coated in a spicy sauce."
     },
     {
@@ -88,7 +88,7 @@
     {
       "category": "soups",
       "name": "Po Tak Soup *",
-      "image": "assets/img/menu/cake.jpg",
+      "image": "assets/img/menu/soup/po-tak.jpg",
       "descriptions": "seafood soup with herbs, lemon juice and mushrooms."
     },
     {
@@ -101,19 +101,19 @@
     {
       "category": "noodles",
       "name": "Laksa",
-      "image": "assets/img/menu/cake.jpg",
+      "image": "assets/img/menu/noodle/laksa.jpg",
       "descriptions": "coconut milk-based broth, noodles, seafood, chicken, and tofu."
     },
     {
       "category": "noodles",
       "name": "Beef Noodle Soup",
-      "image": "assets/img/menu/cake.jpg",
+      "image": "assets/img/menu/noodle/beef-noodle.jpg",
       "descriptions": "rice noodles, broth, beef sliced, beef balls."
     },
     {
       "category": "noodles",
       "name": "Boat Noodle Soup",
-      "image": "assets/img/menu/noodle/.jpg",
+      "image": "assets/img/menu/noodle/boat-noodle.jpg",
       "descriptions": "rice noodle, pork sliced & pork balls or beef sliced & beef balls."
     },
     {
@@ -132,13 +132,13 @@
     {
       "category": "noodles",
       "name": "Yen Ta Fo * (Soup/Dry)",
-      "image": "assets/img/menu/noodle/.jpg",
+      "image": "assets/img/menu/noodle/yen-ta-fo.jpg",
       "descriptions": "flat noodle, scafood, veges with red bean curd"
     },
     {
       "category": "noodles",
       "name": "Suki Yaki (Soup/Dry)",
-      "image": "assets/img/menu/noodle/.jpg",
+      "image": "assets/img/menu/noodle/suki.jpg",
       "descriptions": "glass noodle with chinese cabbage, celery, water spinach."
     },
     {
@@ -206,7 +206,7 @@
     {
       "category": "woks",
       "name": "Chilli stir fry",
-      "image": "assets/img/menu/wok/.jpg",
+      "image": "assets/img/menu/wok/chilli.jpg",
       "descriptions": "onion, capsicum, and chilli."
     },
     {
@@ -218,7 +218,7 @@
     {
       "category": "woks",
       "name": "Cashew stir fry (Signature dish)",
-      "image": "assets/img/menu/wok/.jpg",
+      "image": "assets/img/menu/wok/cashew.jpg",
       "descriptions": "cashews, chilli jam, and mixed vegetable."
     },
     {
@@ -248,7 +248,7 @@
     {
       "category": "woks",
       "name": "Prik Khing stir fry",
-      "image": "assets/img/menu/wok/.jpg",
+      "image": "assets/img/menu/belly/prik-khing.jpg",
       "descriptions": "green beans, dried shrimp, chilli and kaffir lime leaves."
     },
     {
@@ -310,7 +310,7 @@
     {
       "category": "SFN",
       "name": "Hokkien Noodles",
-      "image": "assets/img/menu/sfn/.jpg",
+      "image": "assets/img/menu/sfn/hokkein.jpg",
       "descriptions": "thick egg noodles, garlic, soy sauce."
     },
     {
@@ -335,25 +335,25 @@
     {
       "category": "salads",
       "name": "Beef Salad",
-      "image": "assets/img/menu/salad/.jpg",
+      "image": "assets/img/menu/salad/beef-salad.jpg",
       "descriptions": "grilled sliced beef, lemongrass, mint, cucumber, chilli jam."
     },
     {
       "category": "salads",
       "name": "Chicken or Pork Larb",
-      "image": "assets/img/menu/salad/.jpg",
+      "image": "assets/img/menu/salad/larb.jpg",
       "descriptions": "minced chicken or pork, ground rice, mint, lime juice."
     },
     {
       "category": "salads",
       "name": "Vietnamese Noodle Salad with Spring Rolls or Beef",
-      "image": "assets/img/menu/salad/.jpg",
+      "image": "assets/img/menu/salad/viet.jpg",
       "descriptions": "vermicelli noodles, mint, bean sprout, Nouc Cham dressing."
     },
     {
       "category": "salads",
       "name": "Hanoi Chicken Salad ",
-      "image": "assets/img/menu/salad/.jpg",
+      "image": "assets/img/menu/salad/hanoi.jpg",
       "descriptions": "chicken, mint, cabbage peanuts with Nouc Cham dressing."
     },
     {
@@ -365,7 +365,7 @@
     {
       "category": "salads",
       "name": "Yum Woon Sen *",
-      "image": "assets/img/menu/salad/.jpg",
+      "image": "assets/img/menu/salad/yum-woon-sen.jpg",
       "descriptions": "seafood, glass noodlc, tomato, onion, lime juice."
     },
     {
@@ -377,7 +377,7 @@
     {
       "category": "salads",
       "name": "Prawn */ Seafood */ Squid * Salad ",
-      "image": "assets/img/menu/salad/.jpg",
+      "image": "assets/img/menu/salad/sea-salad.jpg",
       "descriptions": "chilli jam, cucumber, mint, tomato."
     },
     {
@@ -420,13 +420,13 @@
     {
       "category": "specialty",
       "name": "Steamed Chicken",
-      "image": "assets/img/menu/specialty/.jpg",
+      "image": "assets/img/menu/specialty/st-ch.jpg",
       "descriptions": "garlic and ginger infused chicken."
     },
     {
       "category": "specialty",
       "name": "Lao BBQ Chicken (Gai Yang)",
-      "image": "assets/img/menu/specialty/.jpg",
+      "image": "assets/img/menu/specialty/gai-yang.jpg",
       "descriptions": "lemongrass and garlic infused chicken in Thai style."
     },
     {
@@ -450,7 +450,7 @@
     {
       "category": "specialty",
       "name": "Kang Kung vegetables **",
-      "image": "assets/img/menu/specialty/.jpg",
+      "image": "assets/img/menu/specialty/kk-veg.jpg",
       "descriptions": "Stir fry kang kung with soy sauce and garlic."
     },
     {
