@@ -75,7 +75,7 @@
         </nav>
         <!-- .navbar -->
         <a
-          href="https://www.menulog.com.au/restaurants-thai-thai-restaurant-casuarina"
+          href="#order-now"
           target="_blank"
           class="book-a-table-btn scrollto d-md-flex"
           >Order now</a
@@ -265,6 +265,7 @@
                 <li data-filter=".filter-dessert">Desserts</li>
                 <li data-filter=".filter-beverage">Beverages</li>
               </ul>
+              <script src="assets/js/menu.js"></script>
             </div>
           </div>
 
@@ -280,10 +281,10 @@
 
       <!-- Special menu -->
       <section id="special" class="special">
-        <div class="section-title container">
+        <div class="section-title container special-section-title">
           <h2>Special Menu</h2>
           <p>Special Menu</p>
-          <h6>* Please order more than 1 day prior to actual date</h6>
+          <span>[ Kindly place your order at least 1 day in advance ]</span>
         </div>
 
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -308,9 +309,51 @@
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+            ></button>
           </div>
           <div class="carousel-inner">
+            <!-- Spicy&Sour squid  -->
             <div class="carousel-item active">
+              <a
+                href="assets/img/special/spicy&sour_sq.jpg"
+                class="gallery-lightbox"
+              >
+                <img
+                  src="assets/img/special/spicy&sour_sq.jpg"
+                  class="d-block w-100"
+                  loading="lazy"
+                />
+              </a>
+              <div class="carousel-caption d-md-block">
+                <span>Spicy & Sour squid</span>
+              </div>
+            </div>
+
+            <!-- fried barra -->
+            <div class="carousel-item">
               <a
                 href="assets/img/special/fried-barra.jpg"
                 class="gallery-lightbox"
@@ -327,6 +370,8 @@
                 >
               </div>
             </div>
+
+            <!-- lao-lotus -->
             <div class="carousel-item">
               <a
                 href="assets/img/special/lao-lotus.jpg"
@@ -342,6 +387,8 @@
                 <span>Laotian salad with lotus and fermented pork sausage</span>
               </div>
             </div>
+
+            <!-- squid sutff -->
             <div class="carousel-item">
               <a
                 href="assets/img/special/squid-stuff.jpg"
@@ -357,12 +404,67 @@
                 <span>Squid stuff minced pork</span>
               </div>
             </div>
+
+            <!-- mama salad -->
+            <div class="carousel-item">
+              <a
+                href="assets/img/special/instant-noodle.jpg"
+                class="gallery-lightbox"
+              >
+                <img
+                  src="assets/img/special/instant-noodle.jpg"
+                  class="d-block w-100"
+                  loading="lazy"
+                />
+              </a>
+              <div class="carousel-caption d-md-block">
+                <span>Spicy instant noodle salad with minced pork</span>
+              </div>
+            </div>
+
+            <!-- sour curry -->
+            <div class="carousel-item">
+              <a
+                href="assets/img/special/sour-curry.jpg"
+                class="gallery-lightbox"
+              >
+                <img
+                  src="assets/img/special/sour-curry.jpg"
+                  class="d-block w-100"
+                  loading="lazy"
+                />
+              </a>
+              <div class="carousel-caption d-md-block">
+                <span>Sour curry with Climbing Wattle Omelette (Cha-Om)</span>
+              </div>
+            </div>
+
+            <!-- steamed-egg -->
+            <div class="carousel-item">
+              <a
+                href="assets/img/special/steamed-egg.jpg"
+                class="gallery-lightbox"
+              >
+                <img
+                  src="assets/img/special/steamed-egg.jpg"
+                  class="d-block w-100"
+                  loading="lazy"
+                />
+              </a>
+              <div class="carousel-caption d-md-block">
+                <span
+                  >Steamed egg pot with minced pork (Seafood also
+                  available)</span
+                >
+              </div>
+            </div>
           </div>
+
           <button
             class="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
+            data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -378,6 +480,139 @@
           </button>
         </div>
       </section>
+
+      <!-- ======= Order Now Section ======= -->
+      <section id="order-now" class="order-now">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Order now</h2>
+            <p>Ways to place an order & table reservation</p>
+          </div>
+
+          <div class="row">
+            <!-- Call Us Section -->
+            <div class="col-lg-6">
+              <div class="box">
+                <span>01</span>
+                <h2>Call Us</h2>
+                <h6>Takeaway, Delivery, and Table Reservation</h6>
+                <hr />
+                <p class="phone-number">
+                  <a href="tel:+6189279623" target="_blank">+61 8927 9623</a
+                  ><br />
+                  <a href="tel:+6189454388" target="_blank">+61 8945 4388</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Partner App Section -->
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <span>02</span>
+                <h2>Partner App</h2>
+                <h6>Takeaway and Delivery</h6>
+                <hr />
+                <div class="row align-items-center">
+                  <div class="col-6 text-center">
+                    <h4>UberEats</h4>
+                    <a
+                      href="https://www.ubereats.com/au/store/thai-thai/rEAZ326oWeSM6enDNSk4PA?diningMode=DELIVERY"
+                      target="_blank"
+                    >
+                      <img
+                        src="./assets/img/uber-eats-logo.png"
+                        alt="UberEats Logo"
+                        style="width: 100%; max-width: 120px; height: auto"
+                      />
+                    </a>
+                  </div>
+                  <div class="col-6 text-center">
+                    <h4>Menulog</h4>
+                    <a
+                      href="https://www.menulog.com.au/restaurants-thai-thai-restaurant-casuarina"
+                      target="_blank"
+                    >
+                      <img
+                        src="./assets/img/menulog-logo.png"
+                        alt="Menulog Logo"
+                        style="width: 100%; max-width: 120px; height: auto"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Order Now Section -->
+       
+   <!-- Book A Table Section -->
+    <section id="book-a-table" class="book-a-table section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>RESERVATION</h2>
+            <p>Book a Table</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <input type="date" name="date" class="form-control" id="date" placeholder="Date" required>
+                        <div id="date-error" class="error">Please select a valid date. Past dates are not allowed.</div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <input type="time" class="form-control" name="time" id="time" placeholder="Time" required>
+                        <div id="time-error" class="error">Sorry, we are closed at that time. Please select a time between 11 AM and 10 PM on weekdays, or 10 AM and 11 PM on weekends.</div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <select name="people" class="form-select" id="people" required>
+                            <option value="">Number of guests</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7">7 People</option>
+                            <option value="8">8 People</option>
+                            <option value="9">9 People</option>
+                            <option value="10">10 People</option>
+                            <option value="11">11 People</option>
+                            <option value="12">12 People</option>
+                            <option value="13">13+ People</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                </div>
+
+                <div class="text-center mt-3">
+                    <!-- These divs are part of the original template's AJAX handling -->
+                    <div class="loading" style="display: none;">Loading</div>
+                    <div class="error-message" style="display: none;"></div>
+                    <div class="sent-message" style="display: none;">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+                    <button type="submit">Book a Table</button>
+                </div>
+            </form><!-- End Reservation Form -->
+
+        </div>
+
+    </section><!-- /Book A Table Section -->
 
       <!-- ======= Gallery Section ======= -->
       <section id="gallery" class="gallery">
@@ -495,13 +730,10 @@
                   <i class="bi bi-clock"></i>
                   <h4>Open Hours:</h4>
                   <p>
-                    Monday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00 PM
+                    Monday, Wednesday - Saturday : 11:00 AM - 2:00 PM & 5:00 PM
+                    - 9:00 PM
                     <br />
                     Tuesday : Closed
-                    <br />
-                    Wednesday - Saturday : 11:00 AM - 2:00 PM & 5:00 PM - 9:00
-                    PM
-
                     <br />
                     Sunday : 5:00 PM - 9:00 PM
                     <br />
@@ -524,7 +756,7 @@
                 <div class="phone">
                   <i class="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <a href="tel:+6189279263" target="_blank">+61 8927 9623</a
+                  <a href="tel:+6189279623" target="_blank">+61 8927 9623</a
                   ><span><a href="tel:+6189454388">, +61 8945 4388</a></span>
                 </div>
               </div>
