@@ -1,0 +1,568 @@
+{
+  "items": [
+    {
+      "category": "starters",
+      "name": "Spring Rolls (4pcs) **",
+      "image": "assets/img/menu/starter/sr.jpg",
+      "descriptions": "crispy rolls filled with vegetables and vermicelli served with plum sauce."
+    },
+    {
+      "category": "starters",
+      "name": "Curry Puffs (4pcs) **",
+      "image": "assets/img/menu/starter/cp.jpg",
+      "descriptions": "pastry shells filled with carrots, peas in curry spice."
+    },
+    {
+      "category": "starters",
+      "name": "Money Bags (4pcs)",
+      "image": "assets/img/menu/starter/mb.jpg",
+      "descriptions": "minced pork, coconut, peas and coconut wrapped in a golden bag."
+    },
+    {
+      "category": "starters",
+      "name": "Fish Cake * (4pcs)",
+      "image": "assets/img/menu/starter/fc.jpg",
+      "descriptions": "pattics made of a blend of fish, red curry paste and spices."
+    },
+    {
+      "category": "starters",
+      "name": "Spicy Chicken Wings (4pcs)",
+      "image": "assets/img/menu/starter/spicy.jpg",
+      "descriptions": "fried chicken wings coated in a spicy sauce."
+    },
+    {
+      "category": "starters",
+      "name": "Garlic Chicken Wings (4pcs)",
+      "image": "assets/img/menu/starter/garlic-wing.jpg",
+      "descriptions": "fried chicken wings coated in a garlic sauce."
+    },
+    {
+      "category": "starters",
+      "name": "Rice Paper Rolls * (2 rolls) ",
+      "image": "assets/img/menu/starter/rice-roll.jpg",
+      "descriptions": "pork, prawns, fresh herbs rolled with rice paper, herb sauce."
+    },
+    {
+      "category": "starters",
+      "name": "Mixed Entree",
+      "image": "assets/img/menu/starter/mixed.jpg",
+      "descriptions": "spring roll, curry puff, fish cake* and chicken wing."
+    },
+    {
+      "category": "starters",
+      "name": "Satay Chicken Skewers (4 sticks)",
+      "image": "assets/img/menu/starter/satay.jpg",
+      "descriptions": "marinated in herbs with peanut sauce."
+    },
+    {
+      "category": "starters",
+      "name": "Pork Skewers (Moo Phing) (4 sticks) ",
+      "image": "assets/img/menu/starter/moo-phing.jpg",
+      "descriptions": "BBQ pork marinated in herbs."
+    },
+    {
+      "category": "starters",
+      "name": "Prawn Sarong * (4pcs)",
+      "image": "assets/img/menu/starter/sarong.jpg",
+      "descriptions": "prawns wrapped in crispy egg noodles with sauce."
+    },
+    {
+      "category": "starters",
+      "name": "Lemongrass Pork (4 sticks)",
+      "image": "assets/img/menu/starter/lemongrass.jpg",
+      "descriptions": "grilled herb infused pork blend, scrved with a delicious vibrant sauce."
+    },
+
+    {
+      "category": "soups",
+      "name": "Tom Yum Soup (Chicken/Prawn/Seafood *)",
+      "image": "assets/img/menu/soup/tom-yum.jpg",
+      "descriptions": "spicy and sour soup, lemon grass, lemon juice, chilli paste and mushroom."
+    },
+    {
+      "category": "soups",
+      "name": "Tom Kha Soup (Chicken/Mushroom **)",
+      "image": "assets/img/menu/soup/tom-kha.jpg",
+      "descriptions": "mild soup with galangal, Iemon juice, mushroom, herbs and coconut milk."
+    },
+    {
+      "category": "soups",
+      "name": "Po Tak Soup *",
+      "image": "assets/img/menu/soup/po-tak.jpg",
+      "descriptions": "seafood soup with herbs, lemon juice and mushrooms."
+    },
+    {
+      "category": "soups",
+      "name": "Chicken and Sweet Corn Soup ",
+      "image": "assets/img/menu/soup/corn-soup.jpg",
+      "descriptions": "puréed corn kernels with a hint of chicken"
+    },
+
+    {
+      "category": "noodles",
+      "name": "Laksa",
+      "image": "assets/img/menu/noodle/laksa.jpg",
+      "descriptions": "coconut milk-based broth, noodles, seafood, chicken, and tofu."
+    },
+    {
+      "category": "noodles",
+      "name": "Beef Noodle Soup",
+      "image": "assets/img/menu/noodle/beef-noodle.jpg",
+      "descriptions": "rice noodles, broth, beef sliced, beef balls."
+    },
+    {
+      "category": "noodles",
+      "name": "Boat Noodle Soup",
+      "image": "assets/img/menu/noodle/boat-noodle.jpg",
+      "descriptions": "rice noodle, pork sliced & pork balls or beef sliced & beef balls."
+    },
+    {
+      "category": "noodles",
+      "name": "Tom Yum Noodle (Soup/Dry)",
+      "image": "assets/img/menu/noodle/ty-noodle.jpg",
+      "descriptions": "minced pork, bean sprout, peanuts, spicy soup"
+    },
+
+    {
+      "category": "noodles",
+      "name": "Chicken Noodle Soup",
+      "image": "assets/img/menu/noodle/ch-noodle.jpg",
+      "descriptions": "rice noodle soup with chicken and chicken stock."
+    },
+    {
+      "category": "noodles",
+      "name": "Yen Ta Fo * (Soup/Dry)",
+      "image": "assets/img/menu/noodle/yen-ta-fo.jpg",
+      "descriptions": "flat noodle, scafood, veges with red bean curd"
+    },
+    {
+      "category": "noodles",
+      "name": "Suki Yaki (Soup/Dry)",
+      "image": "assets/img/menu/noodle/suki.jpg",
+      "descriptions": "glass noodle with chinese cabbage, celery, water spinach."
+    },
+    {
+      "category": "noodles",
+      "name": "Laad Na (flat noodle / crispy egg noodle)",
+      "image": "assets/img/menu/noodle/laad-na.jpg",
+      "descriptions": "selected noodles topped with a thick gravy sauce."
+    },
+    {
+      "category": "noodles",
+      "name": "Khao Soi",
+      "image": "assets/img/menu/noodle/khao-soi.jpg",
+      "descriptions": "egg noodles, chicken drumstick in another region coconut curry."
+    },
+    {
+      "category": "noodles",
+      "name": "Guay Jup",
+      "image": "assets/img/menu/noodle/guay-jup.jpg",
+      "descriptions": "flat rice noodle soup with pork belly, boiled egg in a five spice broth."
+    },
+    {
+      "category": "noodles",
+      "name": "BBQ Pork/Roast duck/Crispy pork belly with Egg Noodles (soup/dry)",
+      "image": "assets/img/menu/noodle/duck-noodle.jpg",
+      "descriptions": "egg noodles with a variety of selected meat."
+    },
+
+    {
+      "category": "curries",
+      "name": "Green Curry",
+      "image": "assets/img/menu/curry/green.jpg",
+      "descriptions": "medium hot green chilli curry, thai eggplant, basil, coconut milk."
+    },
+    {
+      "category": "curries",
+      "name": "Red Curry",
+      "image": "assets/img/menu/curry/red.jpg",
+      "descriptions": "mild medium red curry, thai eggplant, coconut milk."
+    },
+    {
+      "category": "curries",
+      "name": "Yellow Curry",
+      "image": "assets/img/menu/curry/yellow.jpg",
+      "descriptions": "turmeric, carrots, potatoes, onion, coconut milk."
+    },
+    {
+      "category": "curries",
+      "name": "Panang Curry",
+      "image": "assets/img/menu/curry/penang.jpg",
+      "descriptions": "peanuts, kaffir lime leaves, coconut milk."
+    },
+    {
+      "category": "curries",
+      "name": "Massaman Beef Curry",
+      "image": "assets/img/menu/curry/msm.jpg",
+      "descriptions": "mild chunky beef, peanuts, potatoes, onion."
+    },
+
+    {
+      "category": "woks",
+      "name": "Basil stir fry",
+      "image": "assets/img/menu/wok/basil.jpg",
+      "descriptions": "thai basil, mixed vegetable, and chilli."
+    },
+    {
+      "category": "woks",
+      "name": "Chilli stir fry",
+      "image": "assets/img/menu/wok/chilli.jpg",
+      "descriptions": "onion, capsicum, and chilli."
+    },
+    {
+      "category": "woks",
+      "name": "Ginger stir fry",
+      "image": "assets/img/menu/wok/ginger.jpg",
+      "descriptions": "ginger, mushroom, baby corn, onion."
+    },
+    {
+      "category": "woks",
+      "name": "Cashew stir fry (Signature dish)",
+      "image": "assets/img/menu/wok/cashew.jpg",
+      "descriptions": "cashews, chilli jam, and mixed vegetable."
+    },
+    {
+      "category": "woks",
+      "name": "Black bean stir fry",
+      "image": "assets/img/menu/wok/black-bean.jpg",
+      "descriptions": "black bean, garlic, soy."
+    },
+    {
+      "category": "woks",
+      "name": "Garlic pepper stir fry",
+      "image": "assets/img/menu/wok/garlic-pepper.jpg",
+      "descriptions": "garlic, pepper, mixed vegie."
+    },
+    {
+      "category": "woks",
+      "name": "Jungle stir fry",
+      "image": "assets/img/menu/wok/jungle.jpg",
+      "descriptions": "fry red curry paste, young peppercorns, green beans, coconut milk."
+    },
+    {
+      "category": "woks",
+      "name": "Pad Char stir fry",
+      "image": "assets/img/menu/wok/pad-char.jpg",
+      "descriptions": "strong aromatic stir fry with red curry paste and herbs."
+    },
+    {
+      "category": "woks",
+      "name": "Prik Khing stir fry",
+      "image": "assets/img/menu/belly/prik-khing.jpg",
+      "descriptions": "green beans, dried shrimp, chilli and kaffir lime leaves."
+    },
+    {
+      "category": "woks",
+      "name": "Sweet & sour stir fry",
+      "image": "assets/img/menu/wok/ss.jpg",
+      "descriptions": "green beans, dried shrimp, chilli and kaffir lime leaves."
+    },
+
+    {
+      "category": "belly",
+      "name": "Krapao (basil) Crispy pork belly",
+      "image": "assets/img/menu/belly/basil-belly.jpg",
+      "descriptions": "wok-tossed crispy pork, green beans, bamboo, holy basil, chilli and garlic."
+    },
+    {
+      "category": "belly",
+      "name": "Prik Khing (chilli paste) Crispy pork belly",
+      "image": "assets/img/menu/belly/prik-khing.jpg",
+      "descriptions": "wok-tossed pork belly with green beans, dried shrimp, chilli and kaffir lime leaves."
+    },
+    {
+      "category": "belly",
+      "name": "Kang Kung Crispy pork belly",
+      "image": "assets/img/menu/belly/kang-kung.jpg",
+      "descriptions": "wok tossed kang kung vegetables with crispy pork belly, chilli and soy sauce."
+    },
+    {
+      "category": "belly",
+      "name": "Pad Char Crispy pork belly",
+      "image": "assets/img/menu/belly/pad-char.jpg",
+      "descriptions": "aromatic stir fry with krachai, red curry paste, thai eggplant, young peppercorns, kaffir lime leaves, and coconut milk."
+    },
+    {
+      "category": "belly",
+      "name": "Moo Krob",
+      "image": "assets/img/menu/belly/moo-krob.jpg",
+      "descriptions": "crispy pork belly topped with soya bean sauce."
+    },
+
+    {
+      "category": "SFN",
+      "name": "Pad Thai",
+      "image": "assets/img/menu/sfn/pad-thai.jpg",
+      "descriptions": "rice noodles, egg, bean sprouts, peanuts, tamarind sauce."
+    },
+    {
+      "category": "SFN",
+      "name": "Stir Fried Noodles (Pad see ew)",
+      "image": "assets/img/menu/sfn/see-ew.jpg",
+      "descriptions": "flat rice noodles, eggs, garlics, and soy sauce."
+    },
+    {
+      "category": "SFN",
+      "name": "Drunk Noodles (Pad Kee Mow)",
+      "image": "assets/img/menu/sfn/drunk.jpg",
+      "descriptions": "flat rice noodle, garlic, chilli and basil."
+    },
+    {
+      "category": "SFN",
+      "name": "Hokkien Noodles",
+      "image": "assets/img/menu/sfn/hokkein.jpg",
+      "descriptions": "thick egg noodles, garlic, soy sauce."
+    },
+    {
+      "category": "SFN",
+      "name": "Singapore Noodles",
+      "image": "assets/img/menu/sfn/singapore.jpg",
+      "descriptions": "thin egg noodles, curry spice."
+    },
+
+    {
+      "category": "salads",
+      "name": "Thai Green Papaya Salad",
+      "image": "assets/img/menu/salad/thai-popo.jpg",
+      "descriptions": "green papaya, carrots, green beans, tomato, lime, chilli."
+    },
+    {
+      "category": "salads",
+      "name": "Laotian Green Papaya Salad (Crab and Anchovies / shrimp paste) ",
+      "image": "assets/img/menu/salad/lao-popo.jpg",
+      "descriptions": "green papaya, carrots, fermented fish sauce, shrimp paste, tomatoes, chilli"
+    },
+    {
+      "category": "salads",
+      "name": "Beef Salad",
+      "image": "assets/img/menu/salad/beef-salad.jpg",
+      "descriptions": "grilled sliced beef, lemongrass, mint, cucumber, chilli jam."
+    },
+    {
+      "category": "salads",
+      "name": "Chicken or Pork Larb",
+      "image": "assets/img/menu/salad/larb.jpg",
+      "descriptions": "minced chicken or pork, ground rice, mint, lime juice."
+    },
+    {
+      "category": "salads",
+      "name": "Vietnamese Noodle Salad with Spring Rolls or Beef",
+      "image": "assets/img/menu/salad/viet.jpg",
+      "descriptions": "vermicelli noodles, mint, bean sprout, Nouc Cham dressing."
+    },
+    {
+      "category": "salads",
+      "name": "Hanoi Chicken Salad ",
+      "image": "assets/img/menu/salad/hanoi.jpg",
+      "descriptions": "chicken, mint, cabbage peanuts with Nouc Cham dressing."
+    },
+    {
+      "category": "salads",
+      "name": "Crispy Kang Kung Salad (Veggies sauce **/ Minced Pork And Prawn Sauce) ",
+      "image": "assets/img/menu/salad/crispy-kk.jpg",
+      "descriptions": "thin egg noodles, curry spice."
+    },
+    {
+      "category": "salads",
+      "name": "Yum Woon Sen *",
+      "image": "assets/img/menu/salad/yum-woon-sen.jpg",
+      "descriptions": "seafood, glass noodlc, tomato, onion, lime juice."
+    },
+    {
+      "category": "salads",
+      "name": "Nam Tok (Pork / Beef)",
+      "image": "assets/img/menu/salad/nam-tok.jpg",
+      "descriptions": "grilled sliced pork or beef, ground rice, mint, lime juice."
+    },
+    {
+      "category": "salads",
+      "name": "Prawn */ Seafood */ Squid * Salad ",
+      "image": "assets/img/menu/salad/sea-salad.jpg",
+      "descriptions": "chilli jam, cucumber, mint, tomato."
+    },
+    {
+      "category": "salads",
+      "name": "Nam Khao Salad",
+      "image": "assets/img/menu/salad/nam-khao.jpg",
+      "descriptions": "pickled pork, crispy rice tossed with mint, onion, chilli and lime juice."
+    },
+
+    {
+      "category": "specialty",
+      "name": "Hoy Tod (Mussels * / Prawns *)",
+      "image": "assets/img/menu/specialty/hoy-tod.jpg",
+      "descriptions": "crispy pan fried egg pancake with mussels or prawns, bean sprouts, served with chilli sauce."
+    },
+    {
+      "category": "specialty",
+      "name": "Crying Tiger",
+      "image": "assets/img/menu/specialty/crying.jpg",
+      "descriptions": "finely sliced grilled beef steak served with a special spicy sauce."
+    },
+    {
+      "category": "specialty",
+      "name": "Paloh Pork Belly",
+      "image": "assets/img/menu/specialty/paloh.jpg",
+      "descriptions": "braised pork belly in a five spice broth, with boiled egg and pickled cabbage."
+    },
+    {
+      "category": "specialty",
+      "name": "Choo Chee Curry (Prawns * / Barramundi)",
+      "image": "assets/img/menu/specialty/choo-chee.jpg",
+      "descriptions": "red curry paste, kaffir lime leaves, coconut milk in a thick curry."
+    },
+    {
+      "category": "specialty",
+      "name": "Three Flavour Fish (Basa * / Barramundi)",
+      "image": "assets/img/menu/specialty/3-flavor.jpg",
+      "descriptions": "crispy fish fillet topped with swect and tangy tamarind sauce."
+    },
+    {
+      "category": "specialty",
+      "name": "Steamed Chicken",
+      "image": "assets/img/menu/specialty/st-ch.jpg",
+      "descriptions": "garlic and ginger infused chicken."
+    },
+    {
+      "category": "specialty",
+      "name": "Lao BBQ Chicken (Gai Yang)",
+      "image": "assets/img/menu/specialty/gai-yang.jpg",
+      "descriptions": "lemongrass and garlic infused chicken in Thai style."
+    },
+    {
+      "category": "specialty",
+      "name": "Five Spice Roast Duck",
+      "image": "assets/img/menu/specialty/duck.jpg",
+      "descriptions": "marinated and roasted duck in spices served with sweet sauce."
+    },
+    {
+      "category": "specialty",
+      "name": "Salt & Pepper Squid * ",
+      "image": "assets/img/menu/specialty/sp-sq.jpg",
+      "descriptions": "crispy squid stir fried with salt and pepper seasoning."
+    },
+    {
+      "category": "specialty",
+      "name": "Gado Gado",
+      "image": "assets/img/menu/specialty/gado.jpg",
+      "descriptions": "Steamed vegetable on top with sweet peanut sauce"
+    },
+    {
+      "category": "specialty",
+      "name": "Kang Kung vegetables **",
+      "image": "assets/img/menu/specialty/kk-veg.jpg",
+      "descriptions": "Stir fry kang kung with soy sauce and garlic."
+    },
+    {
+      "category": "specialty",
+      "name": "Honey Chicken",
+      "image": "assets/img/menu/specialty/honey-ch.jpg",
+      "descriptions": "Deep fried popped chicken on top with honey and crispy vermicelli noodle"
+    },
+    {
+      "category": "specialty",
+      "name": "Sai Krog",
+      "image": "assets/img/menu/specialty/sai-krog.jpg",
+      "descriptions": "Thai style sausage consists of pork pickle"
+    },
+    {
+      "category": "specialty",
+      "name": "Sai Ouir",
+      "image": "assets/img/menu/specialty/sai-ouir.jpg",
+      "descriptions": "Laotian style sausage with a hint of spiciness"
+    },
+
+    {
+      "category": "rice",
+      "name": "Steamed Jasmine Rice",
+      "image": "assets/img/menu/rice/steamed-rice.jpg",
+      "descriptions": "Thai jasmine rice with a perfectly cooked."
+    },
+    {
+      "category": "rice",
+      "name": "Saffron Coconut Rice",
+      "image": "assets/img/menu/rice/coco.jpg",
+      "descriptions": "Thai jasmine rice with a perfectly cooked."
+    },
+    {
+      "category": "rice",
+      "name": "Garlic and Ginger Rice",
+      "image": "assets/img/menu/rice/garlic-ginger.jpg",
+      "descriptions": "Rice is cooked with minced garlic, ginger, and chicken stock"
+    },
+    {
+      "category": "rice",
+      "name": "Sticky Rice (recomended with any BBQ grilled dish)",
+      "image": "assets/img/menu/rice/sticky-rice.jpg",
+      "descriptions": "Popular rice in the eastern of Thailand"
+    },
+    {
+      "category": "rice",
+      "name": "Fried Rice (Chicken / Beef / Pork / Vegie)",
+      "image": "assets/img/menu/rice/fried-rice.jpg",
+      "descriptions": "fried rice with a chop of vegie and soy sauce."
+    },
+    {
+      "category": "rice",
+      "name": "Special Fried Rice",
+      "image": "assets/img/menu/rice/special.jpg",
+      "descriptions": "chicken, cashews, pineapple, prawns *."
+    },
+    {
+      "category": "rice",
+      "name": "Bangkok Fried Rice",
+      "image": "assets/img/menu/rice/bangkok.jpg",
+      "descriptions": "red curry paste, kaffir lime leaves, onion, and Seafood *."
+    },
+
+    {
+      "category": "dessert",
+      "name": "Lychee Sago with Coconut Milk",
+      "image": "assets/img/menu/desserts/sago.jpg",
+      "descriptions": "N/A"
+    },
+
+    {
+      "category": "beverage",
+      "name": "Thai Mojito",
+      "image": "assets/img/menu/beverage/mojito.jpg",
+      "descriptions": "A refreshing Thai twist on the classic Mojito."
+    },
+    {
+      "category": "beverage",
+      "name": "Lychee and Mint Spritzer",
+      "image": "assets/img/menu/beverage/lychee-mint.jpg",
+      "descriptions": "A delightful combination of lychee and fresh mint, served over ice."
+    },
+    {
+      "category": "beverage",
+      "name": "Thai Iced Coffee",
+      "image": "assets/img/menu/beverage/coffee.jpg",
+      "descriptions": "Chilled coffee with a Thai flair, sweetened and served over ice."
+    },
+    {
+      "category": "beverage",
+      "name": "Thai Lemon Iced Tea",
+      "image": "assets/img/menu/beverage/lemon-tea.jpg",
+      "descriptions": "Iced tea infused with Thai flavors and a hint of lemon."
+    },
+    {
+      "category": "beverage",
+      "name": "Thai Milk Green Tea",
+      "image": "assets/img/menu/beverage/green-tea.jpg",
+      "descriptions": "Green tea with milk, sweetened and served in the Thai style."
+    },
+    {
+      "category": "beverage",
+      "name": "Thai Milk Tea",
+      "image": "assets/img/menu/beverage/milk-tea.jpg",
+      "descriptions": "Classic Thai milk tea, a perfect blend of strong tea, condensed milk, and sugar."
+    },
+    {
+      "category": "beverage",
+      "name": "Pink milk (Nom-yen)",
+      "image": "assets/img/menu/beverage/pink-milk.jpg",
+      "descriptions": "Sweet sala-flavor syrup and milk"
+    }
+  ]
+}
