@@ -350,8 +350,8 @@ document.addEventListener("DOMContentLoaded", function () {
             // --- RESTAURANT HOURS CONFIGURATION ---
             // 24-hour format
             const openingHours = {
-                weekdays: { open: '11:00', close: '22:00' }, // Mon-Fri: 11 AM to 10 PM
-                weekends: { open: '10:00', close: '23:00' }, // Sat-Sun: 10 AM to 11 PM
+                weekdays: { open: '11:00', close: '21:00' }, // Mon-Fri: 11 AM to 10 PM
+                weekends: { open: '17:00', close: '21:00' }, // Sat-Sun: 10 AM to 11 PM
             };
 
             // --- DATE VALIDATION ---
@@ -402,12 +402,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Check 2: Check against opening hours
                 const dayOfWeek = selectedDate.getDay(); // 0 = Sunday, 6 = Saturday
-                const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+                // const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+                const isWeekend = dayOfWeek === 0;
+                const isTuesday = dayOfWeek === 2;
                 const hours = isWeekend ? openingHours.weekends : openingHours.weekdays;
 
                 const isOpen = selectedTime >= hours.open && selectedTime <= hours.close;
 
-                if (isOpen) {
+                if (isOpen && !isTuesday) {
                     timeError.style.display = 'none';
                     submitButton.disabled = false;
                 } else {
