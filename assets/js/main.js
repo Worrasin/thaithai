@@ -336,116 +336,118 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- FORM AND INPUT ELEMENTS ---
-            const reservationForm = document.querySelector('.php-email-form');
-            const dateInput = document.getElementById('date');
-            const timeInput = document.getElementById('time');
-            const submitButton = reservationForm.querySelector('button[type="submit"]');
+document.addEventListener('DOMContentLoaded', () => {
+    const reservationForm = document.querySelector('.php-email-form');
+    const dateInput = document.getElementById('date');
+    const timeInput = document.getElementById('time');
+    const submitButton = reservationForm.querySelector('button[type="submit"]');
 
-            // --- ERROR MESSAGE ELEMENTS ---
-            const dateError = document.getElementById('date-error');
-            const timeError = document.getElementById('time-error');
+    const dateError = document.getElementById('date-error');
+    const timeError = document.getElementById('time-error');
 
-            // --- RESTAURANT HOURS CONFIGURATION ---
-            // 24-hour format
-            const openingHours = {
-                weekdaysLunch: { open: '11:00', close: '14:00' }, // Mon-Fri: 11 AM to 10 PM
-                weekdaysDinner: { open: '17:00', close: '21:00' }, // Mon-Fri: 11 AM to 10 PM
-                weekends: { open: '17:00', close: '21:00' }, // Sat-Sun: 10 AM to 11 PM
-            };
+    const openingHours = {
+        weekdays: [
+            { open: '11:00', close: '14:00' }, // Lunch
+            { open: '17:00', close: '21:00' }  // Dinner
+        ],
+        weekends: { open: '10:00', close: '23:00' } // Saturday & Sunday
+    };
 
-            // --- DATE VALIDATION ---
-            function setMinDate() {
-                // Get today's date based on the user's local time.
-                const today = new Date();
-                
-                // Format the date as YYYY-MM-DD for the input's 'min' attribute
-                const year = today.getFullYear();
-                const month = String(today.getMonth() + 1).padStart(2, '0');
-                const day = String(today.getDate()).padStart(2, '0');
-                const minDate = `${year}-${month}-${day}`;
-                
-                dateInput.setAttribute('min', minDate);
+    function setMinDate() {
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const day = String(today.getDate()).padStart(2, '0');
+        const minDate = `${year}-${month}-${day}`;
+        dateInput.setAttribute('min', minDate);
+    }
+
+    function isTimeInRange(time, open, close) {
+        return time >= open && time <= close;
+    }
+
+    function validateDateTime() {
+        const selectedDateStr = dateInput.value;
+        const selectedTime = timeInput.value;
+
+        if (!selectedDateStr || !selectedTime) {
+            timeError.style.display = 'none';
+            submitButton.disabled = false;
+            return true;
+        }
+
+        const today = new Date();
+        const selectedDate = new Date(`${selectedDateStr}T00:00:00`);
+        const isToday = today.toDateString() === selectedDate.toDateString();
+
+        if (isToday) {
+            const now = new Date();
+            const currentTime = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+            if (selectedTime < currentTime) {
+                timeError.textContent = "Please select a time in the future.";
+                timeError.style.display = 'block';
+                submitButton.disabled = true;
+                return false;
             }
+        }
 
-            // --- TIME & DATE COMBINED VALIDATION ---
-            function validateDateTime() {
-                const selectedDateStr = dateInput.value;
-                const selectedTime = timeInput.value;
+        const dayOfWeek = selectedDate.getDay(); // Sunday = 0, Monday = 1, ..., Saturday = 6
+        const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+        const isTuesday = dayOfWeek === 2;
 
-                if (!selectedDateStr || !selectedTime) {
-                    timeError.style.display = 'none';
-                    submitButton.disabled = false;
-                    return true; // Don't validate if inputs are empty
-                }
+        if (isTuesday) {
+            timeError.textContent = "Sorry, we are closed on Tuesdays.";
+            timeError.style.display = 'block';
+            submitButton.disabled = true;
+            return false;
+        }
 
-                // Check 1: Is the selected date today?
-                const today = new Date();
-                const selectedDate = new Date(`${selectedDateStr}T00:00:00`);
-                const isToday = today.getFullYear() === selectedDate.getFullYear() &&
-                                today.getMonth() === selectedDate.getMonth() &&
-                                today.getDate() === selectedDate.getDate();
+        let isOpen = false;
 
-                // If it's today, check if the selected time is in the past
-                if (isToday) {
-                    const now = new Date();
-                    const currentHours = String(now.getHours()).padStart(2, '0');
-                    const currentMinutes = String(now.getMinutes()).padStart(2, '0');
-                    const currentTime = `${currentHours}:${currentMinutes}`;
-                    if (selectedTime < currentTime) {
-                        timeError.textContent = "Please select a time in the future.";
-                        timeError.style.display = 'block';
-                        submitButton.disabled = true;
-                        return false;
-                    }
-                }
+        if (isWeekend) {
+            const { open, close } = openingHours.weekends;
+            isOpen = isTimeInRange(selectedTime, open, close);
+        } else {
+            // Weekday: check both lunch and dinner ranges
+            isOpen = openingHours.weekdays.some(range => {
+                return isTimeInRange(selectedTime, range.open, range.close);
+            });
+        }
 
-                // Check 2: Check against opening hours
-                const dayOfWeek = selectedDate.getDay(); // 0 = Sunday, 6 = Saturday
-                // const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
-                const isWeekend = dayOfWeek === 0;
-                const isTuesday = dayOfWeek === 2;
-                const hours = isWeekend ? openingHours.weekends : openingHours.weekdaysLunch && openingHours.weekdaysDinner;
+        if (isOpen) {
+            timeError.style.display = 'none';
+            submitButton.disabled = false;
+            return true;
+        } else {
+            const hoursText = isWeekend
+                ? "between 10:00 and 23:00 on weekends."
+                : "either 11:00–14:00 or 17:00–21:00 on weekdays.";
+            timeError.textContent = `Sorry, we are closed at that time. Please select a time ${hoursText}`;
+            timeError.style.display = 'block';
+            submitButton.disabled = true;
+            return false;
+        }
+    }
 
-                const isOpen = selectedTime >= hours.open && selectedTime <= hours.close;
+    reservationForm.addEventListener('submit', function(event) {
+        const isDateValid = dateInput.checkValidity();
+        const isDateTimeValid = validateDateTime();
 
-                if (isOpen && !isTuesday) {
-                    timeError.style.display = 'none';
-                    submitButton.disabled = false;
-                } else {
-                    timeError.textContent = "Sorry, we are closed at that time.";
-                    timeError.style.display = 'block';
-                    submitButton.disabled = true;
-                }
-                return isOpen;
+        if (!isDateValid || !isDateTimeValid) {
+            event.preventDefault();
+            if (!isDateValid) {
+                dateError.style.display = 'block';
             }
-            
-            // --- FORM SUBMISSION HANDLING ---
-            reservationForm.addEventListener('submit', function(event) {
-                // Re-validate on submit just in case
-                const isDateValid = dateInput.checkValidity(); // Checks the 'min' attribute
-                const isDateTimeValid = validateDateTime();
-                
-                if (!isDateValid || !isDateTimeValid) {
-                    event.preventDefault(); // Stop form submission
-                    if (!isDateValid) {
-                        dateError.style.display = 'block';
-                    }
-                }
-            });
-            
-            // --- EVENT LISTENERS ---
-            // Set the minimum date when the page loads
-            setMinDate();
-            
-            // Add listeners to validate as the user changes inputs
-            dateInput.addEventListener('input', () => {
-                // Hide date error on new input
-                if (dateInput.checkValidity()) {
-                    dateError.style.display = 'none';
-                }
-                validateDateTime(); // Re-validate time if the date changes
-            });
-            timeInput.addEventListener('input', validateDateTime);
-        });
+        }
+    });
+
+    setMinDate();
+    dateInput.addEventListener('input', () => {
+        if (dateInput.checkValidity()) {
+            dateError.style.display = 'none';
+        }
+        validateDateTime();
+    });
+
+    timeInput.addEventListener('input', validateDateTime);
+});        
