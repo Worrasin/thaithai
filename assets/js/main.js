@@ -421,7 +421,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             const hoursText = isWeekend
                 ? "between 10:00 and 23:00 on weekends."
-                : "either 11:00–14:00 or 17:00–21:00 on weekdays.";
+                : "either 11:00–14:00 or 17:00–21:00 on weekdays and saturday.";
             timeError.textContent = `Sorry, we are closed at that time. Please select a time ${hoursText}`;
             timeError.style.display = 'block';
             submitButton.disabled = true;
