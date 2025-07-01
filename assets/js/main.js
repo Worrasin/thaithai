@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { open: '11:00', close: '14:00' }, // Lunch
             { open: '17:00', close: '21:00' }  // Dinner
         ],
-        weekends: { open: '10:00', close: '23:00' } // Saturday & Sunday
+        weekends: { open: '17:00', close: '23:00' } // Sunday
     };
 
     function setMinDate() {
@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const dayOfWeek = selectedDate.getDay(); // Sunday = 0, Monday = 1, ..., Saturday = 6
-        const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+        const isWeekend = dayOfWeek === 0;
         const isTuesday = dayOfWeek === 2;
 
         if (isTuesday) {
@@ -420,8 +420,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return true;
         } else {
             const hoursText = isWeekend
-                ? "between 17:00 and 21:00 on weekends."
-                : "either 11:00–14:00 or 17:00–21:00 on weekdays and saturday.";
+                ? "between 17:00 and 21:00 on Sunday."
+                : "either 11:00–14:00 or 17:00–21:00 on weekdays and Saturday.";
             timeError.textContent = `Sorry, we are closed at that time. Please select a time ${hoursText}`;
             timeError.style.display = 'block';
             submitButton.disabled = true;
