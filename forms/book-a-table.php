@@ -12,7 +12,7 @@
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
   } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
+    die( 'The reservation still in maintenance. Please Kindly reserved booking through phone call (8927 9623).');
   }
 
   $book_a_table = new PHP_Email_Form;
