@@ -1,45 +1,52 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+// Only process POST requests
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'worrasin.au@gmail.com';
+  // Clean and assign inputs
+  $name    = htmlspecialchars(trim($_POST["name"]));
+  $email   = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+  $phone   = htmlspecialchars(trim($_POST["phone"]));
+  $people  = htmlspecialchars(trim($_POST["people"]));
+  $date    = htmlspecialchars(trim($_POST["date"]));
+  $time    = htmlspecialchars(trim($_POST["time"]));
+  $message = htmlspecialchars(trim($_POST["message"]));
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'The reservation still in maintenance. Please Kindly reserved booking through phone call (8927 9623).');
+  // Validate email
+  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    http_response_code(400);
+    echo "Invalid email address.";
+    exit;
   }
 
-  $book_a_table = new PHP_Email_Form;
-  $book_a_table->ajax = true;
-  
-  $book_a_table->to = $receiving_email_address;
-  $book_a_table->from_name = $_POST['name'];
-  $book_a_table->from_email = $_POST['email'];
-  $book_a_table->subject = "New table booking request from the website";
+  // Email recipient
+  $to = "worrasin.au@gmail.com";
+  $subject = "New Table Booking Request";
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $book_a_table->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+  // Email content
+  $email_content = "New booking request:\n\n";
+  $email_content .= "Name: $name\n";
+  $email_content .= "Email: $email\n";
+  $email_content .= "Phone: $phone\n";
+  $email_content .= "Guests: $people\n";
+  $email_content .= "Date: $date\n";
+  $email_content .= "Time: $time\n";
+  $email_content .= "Message:\n$message\n";
 
-  $book_a_table->add_message( $_POST['name'], 'Name');
-  $book_a_table->add_message( $_POST['email'], 'Email');
-  $book_a_table->add_message( $_POST['phone'], 'Phone', 4);
-  $book_a_table->add_message( $_POST['date'], 'Date', 4);
-  $book_a_table->add_message( $_POST['time'], 'Time', 4);
-  $book_a_table->add_message( $_POST['people'], '# of people', 1);
-  $book_a_table->add_message( $_POST['message'], 'Message');
+  // Email headers
+  $headers = "From: $name <$email>\r\n";
+  $headers .= "Reply-To: $email\r\n";
 
-  echo $book_a_table->send();
+  // Send the email
+  if (mail($to, $subject, $email_content, $headers)) {
+    echo "OK"; // Required by BootstrapMade form JS for success
+  } else {
+    http_response_code(500);
+    echo "Failed to send booking request.";
+  }
+
+} else {
+  // Not a POST request
+  http_response_code(403);
+  echo "Forbidden: Invalid request method.";
+}
 ?>
