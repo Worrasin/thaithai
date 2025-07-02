@@ -18,8 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
   // Email recipient
-  $emailTo = "ThaiThaiNT@hotmail.com";
-  $emailCC = "worrasin.au@gmail.com, notez_alongkorn@hotmail.com";
+  $emailTo = "worrasin.au@gmail.com";
+  $emailCC = "notez_alongkorn@hotmail.com";
   $subject = "New Table Booking Request @ $date, $time";
 
   // Email content
