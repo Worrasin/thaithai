@@ -1,5 +1,4 @@
 <?php
-// Only process POST requests
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Clean and assign inputs
@@ -19,7 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
   // Email recipient
-  $to = "worrasin.au@gmail.com";
+  $emailTo = "ThaiThaiNT@hotmail.com";
+  $emailCC = "worrasin.au@gmail.com, notez_alongkorn@hotmail.com";
   $subject = "New Table Booking Request @ $date, $time";
 
   // Email content
@@ -35,17 +35,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Email headers
   $headers = "From: $name <$email>\r\n";
   $headers .= "Reply-To: $email\r\n";
+  $headers .= "Cc: $emailCC\r\n";
+  $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
   // Send the email
-  if (mail($to, $subject, $email_content, $headers)) {
-    echo "OK"; // Required by BootstrapMade form JS for success
+  if (mail($emailTo, $subject, $email_content, $headers)) {
+    echo "OK";
   } else {
     http_response_code(500);
     echo "Failed to send booking request.";
   }
 
 } else {
-  // Not a POST request
   http_response_code(403);
   echo "Forbidden: Invalid request method.";
 }
