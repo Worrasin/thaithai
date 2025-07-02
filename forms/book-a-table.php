@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Email recipient
   $to = "worrasin.au@gmail.com";
-  $subject = "New Table Booking Request";
+  $subject = "New Table Booking Request @ $date, $time";
 
   // Email content
   $email_content = "New booking request:\n\n";
